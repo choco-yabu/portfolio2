@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Koyabu Yuuna</h1>
+                <p class="hero-subtitle">Video photographer and editor</p>
+            </div>
+            <div class="scroll-indicator"></div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About</h2>
+            <div class="about-content">
+                <div class="profile">
+                    <h3 class="profile-name">小薮 結菜 - Koyabu Yuuna</h3>
+                    <p class="birth-info">2005年2月7日生まれ</p>
+                    <p class="location-info">兵庫県加東市出身</p>
+                </div>
+
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="artist">好きなアーティスト</button>
+                    <button class="tab-btn" data-tab="words">好きな言葉</button>
+                    <button class="tab-btn" data-tab="camera">カメラ</button>
+                    <button class="tab-btn" data-tab="travel">旅・イベント</button>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="artist">
+                        <div class="favorites">
+                            <ul>
+                                <li>乃木坂46</li>
+                                <li>マカロニえんぴつ</li>
+                                <li>RADWINPS</li>
+                                <li>moon drop</li>
+                                <li>アルステイク</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="words">
+                        <div class="favorite-words">
+                            <ul>
+                                <li>チャンスの神様は前髪しかない</li>
+                                <li>人は会うべき時に会うべき人に出会う</li>
+                                <li>迷ったらワクワクする方へ</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="camera">
+                        <div class="photo-grid">
+                            <img src="./image/higanbana.jpg" alt="彼岸花" class="gallery-img">
+                            <img src="./image/masked_person.jpg" alt="伝統的な仮面" class="gallery-img">
+                            <img src="./image/praying_person.jpg" alt="祈りを捧げる人" class="gallery-img">
+                            <img src="./image/rice_field.jpg" alt="田んぼ" class="gallery-img">
+                            <img src="./image/temple_mask.jpg" alt="寺院の仮面" class="gallery-img">
+                            <img src="./image/traditional_costume.jpg" alt="伝統衣装" class="gallery-img">
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="travel">
+                        <div class="experiences-grid">
+                            <div class="experience-item">
+                                <img src="./image/1B2E6A2C-CD07-4F6F-8981-EF1C6710DCA8.jpg" alt="ノープラン旅" class="experience-img">
+                                <p>ノープラン旅</p>
+                            </div>
+                            <div class="experience-item">
+                                <img src="./image/F3210F12-BC5C-4F18-91E3-A8FC4D70DABF.jpg" alt="無人島プログラム" class="experience-img">
+                                <p>無人島プログラム</p>
+                            </div>
+                            <div class="experience-item">
+                                <img src="./image/A7FB5008-07EE-4740-9BA4-45A86FF962F8.jpg" alt="佰宴祭" class="experience-img">
+                                <p>佰宴祭</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="works" class="works">
+            <h2>Works</h2>
+            <div class="works-grid">
+                <div class="work-item">
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/EwuZwTsuvXY" 
+                            title="潮風とおひなさま" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="work-info">
+                        <h3>潮風とおひなさま</h3>
+                        <p class="work-date">2025年2月制作</p>
+                    </div>
+                </div>
+
+                <div class="work-item">
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/lD5nv1wf8vo" 
+                            title="遠い異国の伊勢志摩で" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="work-info">
+                        <h3>遠い異国の伊勢志摩で</h3>
+                        <p class="work-date">2024年11月制作</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <div class="contact-content">
+                <p class="contact-intro">お問い合わせはこちら</p>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">お名前</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">メールアドレス</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">件名</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">メッセージ</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">送信</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="portfolio2.js"></script>
+</body>
+</html>
