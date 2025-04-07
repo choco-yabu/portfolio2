@@ -171,6 +171,42 @@
         <p>&copy; 2024 Portfolio. All rights reserved.</p>
     </footer>
 
-    <script src="portfolio2.js"></script>
+    <script type="module" src="portfolio2.js"></script>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-auth.js"></script>
+
+    <!-- Firebase設定 -->
+    <script>
+    const firebaseConfig = {
+        apiKey: "あなたのAPIキー",
+        authDomain: "あなたのプロジェクトID.firebaseapp.com",
+        projectId: "あなたのプロジェクトID",
+        storageBucket: "あなたのプロジェクトID.appspot.com",
+        messagingSenderId: "あなたのメッセージングID",
+        appId: "あなたのアプリID"
+    };
+
+    // Firebaseの初期化
+    firebase.initializeApp(firebaseConfig);
+
+    // Firestoreの参照を取得
+    const db = firebase.firestore();
+
+    // データの追加例
+    db.collection("contacts").add({
+        name: "名前",
+        email: "メールアドレス",
+        message: "メッセージ"
+    })
+    .then((docRef) => {
+        console.log("Document written with ID: ", docRef.id);
+    })
+    .catch((error) => {
+        console.error("Error adding document: ", error);
+    });
+    </script>
 </body>
 </html>
